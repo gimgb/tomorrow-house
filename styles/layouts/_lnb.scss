@@ -1,0 +1,46 @@
+.lnb {
+  overflow-x: auto;
+
+  &-list {
+    @include inline-flexbox(start);
+    height: 40px;
+    padding: 0 7px;
+    margin-left: -15px;
+    white-space: nowrap;
+    border-bottom: 1px solid $border;
+  }
+
+  &-item {
+    //flex-shrink: 0;
+
+    &.is-active {
+      a {
+        color: $blue;
+        border-bottom-color: $blue;
+      }
+    }
+
+    a {
+      @include inline-flexbox;
+      @include text-style(13, $dark);
+      height: 40px;
+      padding: 0 8px;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    .ic-new {
+      font-size: 16px;
+      color: $red;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
