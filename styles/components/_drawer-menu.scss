@@ -1,7 +1,7 @@
 .drawer-menu {
   $drawer-height: 36px;
   $community-length: 8;
-  $store-length: 4;
+  $store-length: 9;
   $expert-length: 2;
 
   @function _calculate-max-content-height($length) {
