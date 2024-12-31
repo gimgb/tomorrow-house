@@ -58,6 +58,9 @@ i {
 }
 
 .ic-new::before {
+  font-size: 16px;
+  color: $red;
+
   content: '\e90c';
 }
 
