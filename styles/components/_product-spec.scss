@@ -1,0 +1,19 @@
+.product-spec {
+  .product-table {
+    margin-top: 20px;
+  }
+
+  figure {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include responsive(T) {
+    .product-table {
+      margin-top: 40px;
+    }
+  }
+}
